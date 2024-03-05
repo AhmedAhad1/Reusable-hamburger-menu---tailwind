@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body>
-    <header class="bg-red-950 bg-opacity-75 z-50">
+    <header class="fixed w-full bg-red-950 bg-opacity-75 z-50">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img
@@ -25,7 +25,7 @@
           />
         </div>
         <div
-          class="nav-links duration-500 md:static absolute md:min-h-fit py-5 bg-red-950 md:bg-opacity-0 bg-opacity-75 left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          class="nav-links duration-500 md:static absolute md:min-h-fit py-5 bg-red-950 md:bg-opacity-0 bg-opacity-75 left-0 -top-[600%] md:w-auto w-full flex items-center px-5"
         >
           <ul
             class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-xl"
@@ -81,7 +81,7 @@
       const navLinks = document.querySelector(".nav-links");
       function onToggleMenu(e) {
         e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[9%]");
+        navLinks.classList.toggle("top-[100%]");
       }
     </script>
   </body>
